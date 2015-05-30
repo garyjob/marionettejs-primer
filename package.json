@@ -1,0 +1,10 @@
+{
+  "name": "marionette-primer",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "jquery": "",
+    "backbone.marionette": ""
+  }
+}

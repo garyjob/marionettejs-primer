@@ -1,0 +1,35 @@
+<html>
+  <head>
+  </head>
+  <body>
+    This is pretty BMV
+    <div id="app-container">
+      <div id="main-region" class="container">
+        <p>Here is static content in the web page. You'll notice that it gets
+        replaced by our app as soon as we start it.</p> 
+      </div>
+    </div>
+
+  </body>
+
+  <footer>
+    <!-- 
+      Scripts are placed at the end of the page to ensure when views are rendered 
+      the required HTML elements are already rendered
+    -->
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <script src="./node_modules/backbone.marionette/node_modules/underscore/underscore.js"></script>
+    <script src="./node_modules/backbone.marionette/node_modules/backbone/backbone.js"></script>
+    <script src="./node_modules/backbone.marionette/node_modules/backbone.wreqr/lib/backbone.wreqr.js"></script>
+    <script src="./node_modules/backbone.marionette/node_modules/backbone.babysitter/lib/backbone.babysitter.js"></script>
+    <script src="./node_modules/backbone.marionette/lib/backbone.marionette.js"></script>
+
+    <!-- Listing of all the template files -->
+    <script type="text/template" id="contact-template"> 
+      <p><%- firstName %> <%- lastName %></p>
+    </script>
+
+    <!-- Inclusion of the main application file -->
+    <script src="./scripts/3_model_view.js"></script>    
+  </footer>
+</html>
